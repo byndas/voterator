@@ -1,27 +1,25 @@
 {
-  "name": "clementinejs-fcc",
-  "version": "1.0.1",
-  "description": "The elegant and lightweight boilerplate for full stack JavaScript.",
+  "name": "voterator",
+  "version": "1.0.2",
+  "description": "Voting App.",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstonbl01/clementinejs-fcc"
+    "url": "git+https://github.com/lightofdavinci/voterator.git"
   },
-  "homepage": "http://www.clementinejs.com/",
-  "bugs": "https://github.com/johnstonbl01/clementinejs-fcc/issues",
+  "homepage": "http://www.changelater.com/",
   "keywords": [
     "MongoDB",
     "Mongoose",
     "full stack",
     "Express",
     "Node",
-    "javascript",
-    "boilerplate"
+    "javascript"
   ],
   "scripts": {
-  "start": "node server.js"
+    "start": "node server.js"
   },
-  "author": "Blake Johnston",
+  "author": "Dan Volosnikov",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^1.2.0",
@@ -29,6 +27,19 @@
     "express-session": "^1.11.3",
     "mongoose": "^4.1.0",
     "passport": "^0.3.0",
-    "passport-github": "^1.0.0"
-  }
+    "passport-github": "^1.0.0",
+    "express" : "~4.0.0",           
+    "ejs" : "~0.8.5",               
+    "passport-local" : "~0.1.6",    
+    "passport-facebook" : "~1.0.2", 
+    "passport-twitter" : "~1.0.2",  
+    "passport-google-oauth" : "~0.1.5",
+    "connect-flash" : "~0.1.1",     
+    "bcrypt-nodejs" : "latest",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "method-override": "~1.0.0"
+      },
+  "devDependencies": {}
 }

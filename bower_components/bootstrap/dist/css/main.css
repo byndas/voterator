@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+h1, h2, h3 {font-family: 'Oswald', sans-serif;}
+p, a {font-family:'Open Sans', Helvetica, Arial, sans-serif; }
+
+#wrap > .container {
+  padding-top: 60px;
+}
+
+/* navbar styles---- */
+.navbar{
+  background-color: #f5f5f5;
+  border-bottom:0px;
+}
+.navbar-header{
+  height: 50px;
+}
+#bs-example-navbar-collapse-1{
+  border-top:1px solid #ccc;
+}
+.navbar-inverse .navbar-brand{color:#777;}
+.navbar-inverse .navbar-brand:hover{color: #555;}
+.navbar-inverse .navbar-brand:visited{color: #777;} 
+
+.navbar-inverse .navbar-toggle {
+    border-color: #bbb;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #777;
+}
+
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #ddd;
+}
+
+.button-holder{
+  padding:15px;
+ }
+.button-holder a{
+  color:#555;
+}
+.button-holder a:hover{
+  text-decoration:none;
+  color:#222;
+}
+
+#home{
+   background-color: #ddd;
+ }
+
+/* jumbotron styles */
+.jumbotron{
+  background-image: url("../img/vapic2.jpg");
+  background-position:top;
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 450px;
+  margin-bottom:0;
+}
+
+.jumbotron h1{
+  font-size:63px;
+  padding-top:85px;
+  text-align:center;
+  color:#fff;
+  text-shadow:1px 1px 7px #000;
+}
+.jumbotron h3{
+  text-align:center;
+  color:#fff;
+  text-shadow:1px 1px 7px #000;
+  margin-bottom: 45px;
+  }
+
+.jumbotron h3 a{
+  border:1px solid #fff;
+  padding:5px 50px;
+  width:200px;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+}
+
+.jumbotron a:hover{
+   background-color:rgb(70,180,180);
+   background-color:rgba(70,180,180,0.7);
+   color:white;
+   text-decoration:none;
+}
+
+/* col styles------ */
+.info{
+  text-align:center;
+  padding-bottom:50px;
+  color:#546;
+}
+
+.info .glyphicon{
+  font-size:60px;
+}
+
+.info h3{
+  color:#555;
+}
+
+ /* footer styles----- */
+
+#footer {
+  border-top:1px solid #ddd;
+  height: 50px;
+}
+#footer {
+  background-color: #f5f6f5;
+}
+#footer a{
+  text-decoration:none;
+}
+.container .credit {
+  margin: 15px 0;
+  text-align:center;
+}     

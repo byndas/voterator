@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>	
+<% include ../partials/head %>
+<link href="bootstrap/dist/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+<% if(!isAuthenticated){ %>
+<!-- Fixed navbar -->
+<% include ../partials/firstnav %>
+<% }else{ %>
+<% include ../partials/secondnav %>
+<% } %>
+<!-- Begin page content -->
+<% include ../partials/firstcontent %>      
+<!-- Begin footer    -->
+<% include ../partials/footer %>     
+
+		<script src="jquery/dist/jquery.js"></script>
+		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

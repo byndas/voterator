@@ -1,0 +1,28 @@
+ <div class="jumbotron">
+        <h1>VoteRator</h1>
+        <h3>CREATE CUSTOM POLLS WITH LIVE RESULTS.</h3>
+      </div>
+   
+   <!-- Begin different content -->   
+          <div class="container">
+            <form action="/signup" method="post" role="form">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <p class="email-error">
+                <!-- show any messages that come back with authentication -->
+                <% if (message.length > 0) { %>
+                  <%= message %>
+                <% } %></p>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+              
+              <div class="form-group">
+                <label for="password" class="password-label">Password</label> 
+                <p class="password-error"></p>
+                <input type="password" class="form-control" id="password" name="password">
+              </div>
+              <button type="submit" class="sbmt">CREATE ACCOUNT</button>
+              <input type="button" onclick="location.href='https://google.com';" value="CONNECT WITH FACEBOOK" class="sbmt" />
+            </form>    
+        </div>
+    </div> <!-- closing wrap-->    

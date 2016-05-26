@@ -80,8 +80,7 @@ form{
   border-radius:0px; 
 }
 
-.first-name-error,
-.last-name-error,
+.current-error,
 .email-error,
 .password-error {
   color: #dd4b39;

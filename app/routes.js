@@ -74,8 +74,25 @@ module.exports = function(app, passport) {
     app.get('/edit', isLoggedIn ,function(req,res){
        res.render('pages/edit',{
        user: req.user
-   }); 
-});
+            }); 
+    });
+    
+    app.post('/edit', isLoggedIn,function(req,res,info){
+       // changing current password
+        var user = req.user;
+        var curpassword = req.body.curpassword;
+        var newpassword = req.body.newpassword;
+        if(user.validPassword(curpassword)){
+            user.local.password = user.generateHash(newpassword);
+            // update the user
+                user.save(function(err) {
+                    if (err) {throw err;}
+                });
+            res.status(200).send("Password successfully changed");
+            } else {
+            res.status(500).send("Error");
+            }
+    });
 
 };
 

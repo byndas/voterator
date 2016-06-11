@@ -52,8 +52,6 @@ module.exports = function(app, passport) {
     // =====================================
     // PROFILE SECTION =====================
     // =====================================
-    // we will want this protected so you have to be logged in to visit
-    // we will use route middleware to verify this (the isLoggedIn function)
     app.get('/', isLoggedIn, function(req, res) {
         res.render('pages/index', {
             user : req.user // get the user out of session and pass to template
@@ -69,15 +67,15 @@ module.exports = function(app, passport) {
     });
     
     // =====================================
-    // EDIT ==============================
+    // EDIT ================================
     // =====================================
-    app.get('/edit', isLoggedIn ,function(req,res){
+    app.get('/edit', isLoggedIn, function(req,res){
        res.render('pages/edit',{
        user: req.user
             }); 
     });
     
-    app.post('/edit', isLoggedIn,function(req,res){
+    app.post('/edit', isLoggedIn, function(req,res){
        // changing current password
         var user = req.user;
         var curpassword = req.body.curpassword;
@@ -94,7 +92,6 @@ module.exports = function(app, passport) {
             }
     });
     
-    
     // =====================================
     // NEW POLL=============================
     // =====================================
@@ -105,13 +102,6 @@ module.exports = function(app, passport) {
     });
     
     userPolls(app);
-    
-    // =====================================
-    // CHART================================
-    // =====================================
-    app.get('/chart',function(req,res){
-        res.render('pages/chart');
-    });
 };
 
 // route middleware to make sure a user is logged in

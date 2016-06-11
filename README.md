@@ -1,5 +1,5 @@
 # VOTERATOR FCC
-app link: ######[VOTERATOR](https://voterator.herokuapp.com/)
+app link: [VOTERATOR](https://voterator.herokuapp.com/)
 
 ##### TO FIX
 - [ ] Need to register app on facebook

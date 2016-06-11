@@ -1,7 +1,7 @@
 # VOTERATOR FCC
 **Link to app**: [VOTERATOR](https://voterator.herokuapp.com/) <br />
 **Description**: basic poll generating app <br />
-**Author**: [DAN VOLOSNIKOV](https://www.facebook.com/dan.volosnikov)
+**Author**: [DAN VOLOSNIKOV](http://codepen.io/Volosnikov/)
 
 ##### TO FIX
 - [ ] Need to register app on facebook

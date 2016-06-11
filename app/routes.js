@@ -1,5 +1,8 @@
 'use strict';
 
+// load up the chart model
+var userPolls         = require('../app/models/userpolls');
+
 module.exports = function(app, passport) {
 
     // =====================================
@@ -74,7 +77,7 @@ module.exports = function(app, passport) {
             }); 
     });
     
-    app.post('/edit', isLoggedIn,function(req,res,info){
+    app.post('/edit', isLoggedIn,function(req,res){
        // changing current password
         var user = req.user;
         var curpassword = req.body.curpassword;
@@ -90,7 +93,25 @@ module.exports = function(app, passport) {
             res.status(500).send("Incorrect password");
             }
     });
-
+    
+    
+    // =====================================
+    // NEW POLL=============================
+    // =====================================
+    app.get('/new', isLoggedIn ,function(req,res){
+       res.render('pages/new',{
+       user: req.user
+            }); 
+    });
+    
+    userPolls(app);
+    
+    // =====================================
+    // CHART================================
+    // =====================================
+    app.get('/chart',function(req,res){
+        res.render('pages/chart');
+    });
 };
 
 // route middleware to make sure a user is logged in

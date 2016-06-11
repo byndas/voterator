@@ -1,0 +1,30 @@
+ <div class="jumbotron">
+        <h1>VoteRator</h1>
+        <h3>CREATE CUSTOM POLLS WITH LIVE RESULTS.</h3>
+      </div>
+   
+   <!-- Begin different content -->   
+          <div class="container questions">
+            <h3>New Poll</h3>
+            <form role="form" action="/new/poll" method="post">
+              <div class="form-group">
+                <label for="namepoll" class="poll-label">Name your poll</label> 
+                <input type="text" class="form-control" id="namepoll" name="poll" placeholder="What is your favorite color?">
+              </div>
+              <div class="form-group choice">
+                <label for="options" class="options-label">Options</label> 
+                <input type="text" class="form-control" id="opt1" name="opt1" placeholder="red">
+                <input type="text" class="form-control" id="opt2" name="opt2" placeholder="black">
+                <input type="text" class="hidden" id="opt3" name="opt3" placeholder="New Option" >
+                <input type="text" class="hidden" id="opt4" name="opt4" placeholder="New Option" >
+                <input type="text" class="hidden" id="opt5" name="opt5" placeholder="New Option" >
+                <input type="text" class="hidden" id="opt6" name="opt6" placeholder="New Option" >
+                <input type="text" class="hidden" id="opt7" name="opt7" placeholder="New Option" >
+                <input type="text" class="hidden" id="opt8" name="opt8" placeholder="New Option" >
+                <input type="text" class="hidden" id="opt9" name="opt9" placeholder="New Option" >
+              </div>
+              <button type="button" class="sbmt" id="addoption">MORE OPTIONS</button>
+              <button type="submit" class="sbmt" id="sendpoll">SUBMIT</button>
+              </form>    
+        </div>
+    </div> <!-- closing wrap-->    

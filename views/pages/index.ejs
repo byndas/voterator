@@ -8,18 +8,18 @@
 	
 	<body>
 <% if(!isAuthenticated){ %>
-<!-- Fixed navbar -->
 <% include ../partials/firstnav %>
+<% include ../partials/firstcontent %>      
+<% include ../partials/footer %> 
+
 <% }else{ %>
 <% include ../partials/secondnav %>
+<% include ../partials/secondcontent %>
 <% } %>
-<!-- Begin page content -->
-<% include ../partials/firstcontent %>      
-<!-- Begin footer    -->
-<% include ../partials/footer %>     
 
-		<script src="jquery/dist/jquery.js"></script>
+		<script src="jquery/dist/jquery.min.js"></script>
 		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<% if(isAuthenticated){ %><script src="jquery/dist/allpolls.js"></script><% } %>
 	</body>
 
 </html>

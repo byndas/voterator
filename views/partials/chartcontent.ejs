@@ -1,0 +1,51 @@
+<div class="container">
+  <h3 id="question"><%= title %></h3>
+  
+  <canvas id="canvas"></canvas>
+  <h3 id="beat">I would like to vote for:</h3>
+  <ul class="chart-legend">
+    <li><span id="a">_</span> <%= opt1 %></li>
+    <li><span id="b">_</span> <%= opt2 %></li>
+    <% if(opt3.length > 0){ %>
+    <li><span id="c">_</span> <%= opt3 %>
+    </li><% } %>
+    <% if(opt4.length > 0){ %>
+    <li><span id="d">_</span> <%= opt4 %>
+    </li><% } %>
+     <% if(opt5.length > 0){ %>
+    <li><span id="e">_</span> <%= opt5 %>
+    </li><% } %>
+     <% if(opt6.length > 0){ %>
+    <li><span id="f">_</span> <%= opt6 %>
+    </li><% } %>
+     <% if(opt7.length > 0){ %>
+    <li><span id="g">_</span> <%= opt7 %>
+    </li><% } %>
+     <% if(opt8.length > 0){ %>
+    <li><span id="h">_</span> <%= opt8 %>
+    </li><% } %>
+     <% if(opt9.length > 0){ %>
+    <li><span id="i">_</span> <%= opt9 %>
+    </li><% } %>
+  </ul>
+  <form role="form" action="" method="post">
+    
+    <select name="options" id="votefor">
+     <option value="disabled" selected="selected" hidden>Choose an option</option>
+     <option id="o1" value="value1" ><%= opt1 %></option>
+     <option id="o2" value="value2" ><%= opt2 %></option>
+     <% if(opt3.length > 0){ %><option id="o3" value="value3" ><%= opt3 %></option><% } %>
+     <% if(opt4.length > 0){ %><option id="o4" value="value4" ><%= opt4 %></option><% } %>
+     <% if(opt5.length > 0){ %><option id="o5" value="value5" ><%= opt5 %></option><% } %>
+     <% if(opt6.length > 0){ %><option id="o6" value="value6" ><%= opt6 %></option><% } %>
+     <% if(opt7.length > 0){ %><option id="o7" value="value7" ><%= opt7 %></option><% } %>
+     <% if(opt8.length > 0){ %><option id="o8" value="value8" ><%= opt8 %></option><% } %>
+     <% if(opt9.length > 0){ %><option id="o9" value="value9" ><%= opt9 %></option><% } %>
+    </select>
+    <button type="submit" class="sbmt" id="add-data">SUBMIT</button>
+ </form>  
+ 
+ <p id="id" class="hidden"><%= id %></p>
+</div>
+</div> <!-- closing wrap-->   
+

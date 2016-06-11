@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 h1, h2, h3 {font-family: 'Oswald', sans-serif;}
 p, a {font-family:'Open Sans', Helvetica, Arial, sans-serif; }
+body{background-color: #eee;}
 
 #wrap > .container {
   padding-top: 60px;
@@ -35,13 +36,10 @@ p, a {font-family:'Open Sans', Helvetica, Arial, sans-serif; }
     background-color: #ddd;
 }
 
-.button-holder{
-  padding:15px;
- }
-.button-holder a{
+.navbar-inverse .navbar-nav li a{
   color:#555;
 }
-.button-holder a:hover{
+.navbar-inverse .navbar-nav li a:hover{
   text-decoration:none;
   color:#222;
 }
@@ -83,11 +81,28 @@ p, a {font-family:'Open Sans', Helvetica, Arial, sans-serif; }
   color:white;
 }
 
+#green{
+  background-color:rgb(43, 200, 64);
+}
+
+#yellow{
+  background-color:rgb(255, 204, 0);  
+}
+
+#orange{
+  background-color:rgb(240,84,8);
+}
+
 .jumbotron a:hover{
    background-color:rgb(70,180,180);
-   background-color:rgba(70,180,180,0.7);
+   background-color:rgba(70,180,180,0.8);
    color:white;
    text-decoration:none;
+}
+
+.wigvam{
+  background-image: url('../img/vapic3.jpg');
+  padding-top:10px;
 }
 
 /* col styles------ */
@@ -105,7 +120,24 @@ p, a {font-family:'Open Sans', Helvetica, Arial, sans-serif; }
   color:#555;
 }
 
- /* footer styles----- */
+/* list styles-------*/
+.list{
+  text-align: center;
+}
+
+.list a h3{
+  margin:15px auto;
+  background-color: #fff;
+  padding:10px 0;
+  width:50%;
+  border-radius:3px;
+}
+
+.list a:hover{
+  text-decoration: none;
+}
+
+/* footer styles----- */
 
 #footer {
   border-top:1px solid #ddd;

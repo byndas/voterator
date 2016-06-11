@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-	<head>	
+<head>	
 <% include ../partials/head %>
 <link href="bootstrap/dist/css/main.css" rel="stylesheet" type="text/css">
-	</head>
+</head>
 	
-	<body>
+<body>
 <% if(!isAuthenticated){ %>
 <% include ../partials/firstnav %>
 <% include ../partials/firstcontent %>      
@@ -20,6 +20,5 @@
 		<script src="jquery/dist/jquery.min.js"></script>
 		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <% if(isAuthenticated){ %><script src="jquery/dist/allpolls.js"></script><% } %>
-	</body>
-
+</body>
 </html>
